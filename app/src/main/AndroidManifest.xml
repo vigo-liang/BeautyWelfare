@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-
         android:name=".BaseApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_luanch"
@@ -20,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ImageDetailActivity" />
+        <activity android:name=".FormActivity"></activity>
     </application>
 
 </manifest>

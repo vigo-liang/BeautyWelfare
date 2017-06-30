@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/input_layout_style">
+
+        <TextView
+            android:id="@+id/txt"
+            style="@style/input_left_txt_style"
+            android:text="微信" />
+
+        <EditText
+            android:id="@+id/edit"
+            style="@style/transparent_edittext_style"
+            android:hint="请输入" />
+
+        <TextView
+            android:id="@+id/select_tv"
+            style="@style/select_text_style"
+            android:text="请选择"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

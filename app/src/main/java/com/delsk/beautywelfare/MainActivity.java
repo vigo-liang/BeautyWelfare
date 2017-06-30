@@ -13,6 +13,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
@@ -182,6 +184,24 @@ public class MainActivity extends AppCompatActivity implements BaseQuickAdapter.
         });
 
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                startActivity(new Intent(MainActivity.this, FormActivity.class));
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 
     @Override
     public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
